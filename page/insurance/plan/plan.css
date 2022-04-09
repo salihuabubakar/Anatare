@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Roboto:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-icon {
+  width: 50%;
+}
+
+body {
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+  overflow-y: scroll;
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+.container {
+
+}
+
+.container .desktop-view{
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .desktop-view {
+    display: none;
+  }
+}
+
+.container .mobile-view {
+
+}
+
+@media only screen and (min-width: 769px) {
+  .container .mobile-view {
+    display: none;
+  }
+}
+
+.container .mobile-view nav{
+  display: flex;
+  justify-content: center;
+}
+
+.container .mobile-view nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8%;
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+}
+
+.container .mobile-view nav ul li:nth-child(1){
+  border-right: 2px solid #000;
+  padding-right: 25%;
+}
+
+
+.container .mobile-view nav ul li a{
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .mobile-view nav ul li a:hover{
+  color: #000;
+}
+
+
+.container .mobile-view main{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.container .mobile-view main .content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.insurance{
+  /* background-image: url("../../../img/insurance.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-weight: bolder;
+}
+
+
+button {
+  padding: 5%;
+  width: 70%;
+  margin: 2% auto;
+  border: 2px solid black;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem
+}
+
+
+.container .mobile-view main .content .card{
+  border: 2px solid #000;
+  padding: 14%;
+  margin: 1%;
+  width: 95%;
+  text-decoration: none;
+}
+
+.skeleton-loading {
+  position: relative;
+  background-color: #2b2929;
+  overflow: hidden;
+}
+
+.skeleton-loading.skeleton-text {
+  margin-bottom: 5px;
+  height: 15px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.skeleton-loading.skeleton-text:nth-child(1) {
+  width: 40%;
+}
+
+.skeleton-loading.skeleton-text:nth-child(2) {
+
+  width: 50%;
+}
+
+.skeleton-loading.skeleton-text:nth-child(2) {
+  width: 60%;
+}
+
+
+.skeleton-loading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-100%);
+  background-image: linear-gradient(to left, #23d5ab,  #ee7752, #23a6d5, #23d5ab, transparent);
+  animation: skeleton-loading 1s infinite;
+}
+
+@keyframes skeleton-loading {
+  100% {
+    transform: translate(100%);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container .mobile-view nav ul{
+    padding: 3%;
+  }
+
+  button {
+    padding: 4%;
+    margin: 1% auto;
+  }
+
+  .container .mobile-view main .content .card{
+    border: 2px solid #000;
+    padding: 10%;
+    margin: 1%;
+    width: 95%;
+    text-decoration: none;
+  }
+
+}

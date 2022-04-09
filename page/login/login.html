@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatare | Login</title>
+  <link rel="icon" type="image/png" href="../../../img/holding-hand.jpg">
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <div class="container">
+    <span class="desktop-view">Only Available on Mobile view</span>
+    <div class="mobile-view">
+
+      <div class="box">
+        <h3>This is MVP, a Minimum Viable Product</h3>
+        <p>Please go through the app, and tell us how you feel,
+        your feedbacks are highly appreciated.<strong>Thank you</strong></p>
+        <p>You can log in by clicking on the button</p>
+        <p>Internet connection is required</p>
+      </div>
+
+      <form method="post" action="">
+        <h3 id="logo">Log In</h3>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Type in your username.." autocomplete="off" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password.." autocomplete="off" required />
+
+        <a class="forgot" href="#">Forgot Password?</a>
+        <a class="register" href="#">Register</a>
+
+        <button id="btn" type="button" name="button">Log In</button>
+      </form>
+      <!-- <main>
+        <div class="content">
+
+        </div>
+      </main> -->
+    </div>
+  </div>
+<script type="text/javascript">
+  var button = document.getElementById("btn").addEventListener("click", () => {
+    location.replace("../../dashboard.html");
+  })
+</script>
+</body>
+
+</html>

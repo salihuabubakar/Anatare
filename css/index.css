@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Roboto:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+  overflow-y: scroll;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#main div {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+#main div h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#main img {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
